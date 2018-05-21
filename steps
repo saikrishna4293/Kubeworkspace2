@@ -1,0 +1,21 @@
+install helm
+
+
+$ k create -f rbac-config.yaml
+
+serviceaccount "tiller" created
+clusterrolebinding "tiller" created
+
+
+$ helm init --service-account tiller
+
+helm verison
+
+
+
+kubectl get secrets -n kube-system
+
+k describe secrets -n kube-system 
+
+
+
