@@ -18,7 +18,7 @@ kops create cluster \
     --topology=private \
     --associate-public-ip=false \
     --bastion=true \
-    --state s3://krishna-labs \
+    --state=s3://krishna-labs \
     --name=labs.k8s.krishnalabs.com \
     --authorization=rbac \
     --encrypt-etcd-storage
